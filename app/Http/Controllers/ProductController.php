@@ -55,7 +55,7 @@ class ProductController extends Controller
             'harga_beli'    => 'required',
             'harga_jual'    => 'required',
             'qty'           => 'required',
-            'image'         => 'required',
+            'image'         => 'mimes:jpg,png|required|max:100000',
             'category_id'   => 'required',
         ]);
 
